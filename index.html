@@ -1,98 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./asset/style.css">
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous'/>
-  <title>Document</title>
-</head>
-<body>
-  <head>
-    <header>
-      <nav class="container debug d-flex">
-        <span>LOGO</span>
-        <span><i class="fa-solid fa-bars"></i></span>
-        <ul class="menu-nav d-flex">
-          <li>menu</li>
-          <li>menu</li>
-          <li>menu</li>
-          <li>menu</li>
-          <li>menu</li>
-        </ul>
-      </nav>
-    </header>
-  </head>
-  <main>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous'/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&family=Open+Sans:wght@400;700;800&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <title>Responsive Layout</title>
+        <link rel="stylesheet" href="./asset/style.css" />
+    </head>
 
-    <section>
-      <div class="row container">
-        <div class="col d-flex">
-          <div class="big-card d-flex">
-            <div class="left debug">
-            left
+    <body>
+        <header>
+            <div class="container">
+                <div class="row debug">
+                    <div class="col debug">
+                      <img src="./asset/img/logo.png" alt="">
+                    </div>
+                    <div class="col debug">
+                        <nav class="menu">
+                          <ul>
+                            <li>Planning</li>
+                            <li>Testimonials</li>
+                            <li>Features</li>
+                            <li>About Us</li>
+                            <a href="#"><span>Get Started</span></a>
+                          </ul>
+                        </nav>
+                        <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+                    </div>
+                </div>
             </div>
-            <div class="right debug">
-            right
-            </div>
-          </div>
-          <div class="card debug">
-            card
-          </div>
-          <div class="card debug">
-            card
-          </div>
-          <div class="card debug">
-            card
-          </div>
-          <div class="card debug">
-            card
-          </div>
-        </div>
-      </div>
-    </section>
+        </header>
 
-    <section>
-      <div class="bkg-violet">
-        <div class="app-dev container debug d-flex">
-          <div class="img">
-            FOTO
-          </div>
-          <span>Strategic Planning</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laboriosam explicabo nesciunt at officia earum magnam exercitationem sit labore iste.</p>
-          <div class="app-card d-flex debug">
-            FOTO
-            <span>App development</span>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima quae aut temporibus modi molestiae quia.</p>
-            <span>Pulsante download</span>
-          </div>
-        </div>
-      </div>
-    </section>
+        <main>
 
-    <section>
-      <div class="test container d-flex debug">
-        <h4>TESTIMONIALS</h4>
-        <span>We are committed expert parteners</span>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit tempora iste saepe nemo ut sequi ullam ducimus error, maiores nam!</p>
-        <div class="test-card debug d-flex">
-          <img class="avatar">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim cumque numquam maiores dolore fugit necessitatibus nesciunt vel consequatur rem obcaecati.
-          </p>
-        </div>
-        <div class="test-card debug d-flex">
-          <img class="avatar">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim cumque numquam maiores dolore fugit necessitatibus nesciunt vel consequatur rem obcaecati.
-          </p>
-        </div>
-        <div class="test-card debug d-flex">
-          <img class="avatar">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim cumque numquam maiores dolore fugit necessitatibus nesciunt vel consequatur rem obcaecati.
-          </p>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer></footer>
-</body>
+            <section class="intro">
+                <div class="container">
+                    <div class="row debug">
+                        <div class="col debug">
+                            <div class="row">
+                                <div class="col debug">SX</div>
+                                <div class="col debug">DX</div>
+                            </div>
+                        </div>
+                        <div class="col debug">2</div>
+                        <div class="col debug">3</div>
+                        <div class="col debug">4</div>
+                        <div class="col debug">5</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="planning">
+                <div class="container">
+                    <div class="row debug">
+                        <div class="col debug">planning</div>
+                        <div class="col debug">2</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonials">
+                <div class="container">
+                    <div class="top">TEXT TESTIMONIALS</div>
+                    <div class="cards">
+
+                        <div class="card debug">
+                            <div class="row debug">
+                                <div class="col debug">THUMB</div>
+                                <div class="col debug">TEXT</div>
+                            </div>
+                        </div>
+
+                        <div class="card debug">
+                            <div class="row debug">
+                                <div class="col debug">THUMB</div>
+                                <div class="col debug">TEXT</div>
+                            </div>
+                        </div>
+
+                        <div class="card debug">
+                            <div class="row debug">
+                                <div class="col debug">THUMB</div>
+                                <div class="col debug">TEXT</div>
+                            </div>
+                        </div>
+
+                        <div class="card debug">
+                            <div class="row debug">
+                                <div class="col debug">THUMB</div>
+                                <div class="col debug">TEXT</div>
+                            </div>
+                        </div>
+
+                        <div class="card debug">
+                            <div class="row debug">
+                                <div class="col debug">THUMB</div>
+                                <div class="col debug">TEXT</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <section class="benefits">
+                <div class="container">
+                    <div class="top">TEXT BENEFITS</div>
+                    <div class="row debug">
+                        <div class="col debug">1</div>
+                        <div class="col debug">2</div>
+                        <div class="col debug">3</div>
+                        <div class="col debug">4</div>
+                        <div class="col debug">5</div>
+                        <div class="col debug">6</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about">
+                <div class="container">
+                    <div class="row debug">
+                        <div class="col debug">ABOUT TEXT</div>
+                        <div class="col debug">IMG</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="getstarted debug">CTA</section>
+        </main>
+
+        <footer class="debug">FOOTER</footer>
+       
+    </body>
 </html>

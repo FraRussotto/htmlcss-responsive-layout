@@ -1,120 +1,142 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body{
+  font-family: "PT Sans"
+}
+
 .debug{
-  background-color: rgb(234, 201, 219);
-  border: dashed 1px black;
+  background-color: rgba(205, 176, 202, 0.2);
+  border: 1px solid black;
+  min-height: 50px;
 }
 
 .container{
-  width: 85%;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
-header{
-  background-color: blue;
-}
-
-nav{
-  height: 80px;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 10px;
-}
-
-.d-flex{
+.row{
   display: flex;
 }
 
-/* Menu dopo i 576px */
+.col{
+  width: 100%;
+}
 
-.menu-nav{
+/* HEADER */
+header .row{
+  justify-content: space-between;
+  background-color: #0084fd;
+}
+
+header .row .menu{
   display: none;
 }
 
-li{
-  list-style: none;
-  margin-left: 20px;
+header .row .col:first-child img{
+  padding: 10px;
 }
 
-section{
-  margin-top: 50px;
+header .row .col:last-child ul{
+  padding: 20px 10px 0 10px;
 }
 
-.big-card{
-  width: 100%;
-  height: 600px;
-  flex-direction: column;
-  text-align: center;
+.menu ul{
+  display: flex;
+  justify-content: flex-end;
 }
 
-.big-card .left, .big-card .right{
-  height: 50%;
+.menu ul li{
+  list-style-type: none;
+  margin: 0 15px;
 }
 
-.col{
+.menu a{
+  text-decoration: none;
+}
+
+.row .hamburger{
+  text-align: end;
+  color: white;
+  padding: 20px 10px 0 0;
+}
+
+.menu span{
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 15px;
+}
+
+/* MAIN */
+.intro .row{
   flex-wrap: wrap;
 }
 
-.card{
-  margin-top: 30px;
-  width: 100%;
-  height: 300px;
-  text-align: center;
-}
-
-.card:last-child{
-  margin-bottom: 50px;
-}
-
-.bkg-violet{
-  background-color: blueviolet;
-}
-
-.app-dev{
+.intro .col:first-child .row,
+.planning .row,
+.testimonials .row,
+.benefits .row,
+.about .row
+{
   flex-direction: column;
-  text-align: center;
 }
 
-.app-card{
-  flex-direction: column;
-  width: 100%;
-  height: 600px;
-  margin: 30px 0 50px 0;
-  border-radius: 40px;
+.benefits .row{
+  flex-wrap: wrap;
 }
 
-.test{
-  flex-direction: column;
-  text-align: center;
+
+/* RESPONSIVE AREA */
+
+
+@media screen and (min-width:768px) {
+
+  header .row .menu{
+      display: block;
+  }
+
+  header .row .hamburger{
+      display: none;
+  }
+
+  .intro .col{
+      width: calc(100% / 3);
+  }
+  
+  .intro .col:first-child{
+    width: calc((100%/3)*2);
+  }
+
+  .planning .row,
+  .benefits .row,
+  .about .row,
+  .testimonials .row{
+      flex-direction: row;
+  }
+
+  .testimonials .row .col:first-child{
+      width: 220px;
+  }
+
+  .benefits .col{
+      width: 50%;
+  }
+
+  .about .col:last-child{
+      width: 250px;
+  }
+
 }
 
-.test p{
-  width: 80%;
-  margin: 0 auto;
-}
-
-.test-card{
-  flex-direction: column;
-  height: 450px;
-  border-radius: 40px;
-  text-align: center;
-  margin: 30px;
-}
-
-.avatar{
-  width: 200px;
-  height: 200px;
-  margin: 20px auto;
-  border-radius: 50%;
-  background-color: black;
-  color: aqua;
-}
-
-.test-card p{
-  width: 80%;
-  margin: 0 auto;
+@media screen and (min-width:992px){
+  .intro .col:first-child .row{
+      flex-direction: row;
+  }
+  .benefits .col{
+      width: calc(100% / 3);
+  }
 }
