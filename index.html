@@ -1,139 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous'/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&family=Open+Sans:wght@400;700;800&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-        <title>Responsive Layout</title>
-        <link rel="stylesheet" href="./asset/style.css" />
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous'/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700;800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="./asset/style.css" />
+</head>
 
-    <body>
-        <header>
-            <div class="container">
-                <div class="row debug">
-                    <div class="col debug">
-                      <img src="./asset/img/logo.png" alt="">
+<body>
+
+    <header>
+        <nav class="container d-flex">
+            <div class="logo">
+                <img src="./asset/img/logo.png" alt="">
+            </div>
+            <div class="menu">
+                <div class="menu-hamburger">
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                </div>
+                <div class="menu-list">
+                    <ul class="d-flex">
+                        <a href="#"><li>planning</li></a>
+                        <a href="#"><li>testimonials</li></a>
+                        <a href="#"><li>features</li></a>
+                        <a href="#"><li>about as</li></a>
+                        <a href="#"><li>get started</li></a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="box-container container">
+                <div class="row">
+                    <div class="col d-flex">
+                        <div class="box d-flex">
+                            <h3>Get a demo application</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus voluptatum asperiores similique quo aliquam? Dolores dolor earum quae maiores repellendus.</p>
+                            <div class="btn">
+                                <a href="#"><i class="fa-brands fa-apple"></i><span>App Store</span></a>
+                            </div>
+                            <img src="./asset/img/phone.png" alt="">
+                        </div>
+                        <div class="box d-flex">
+                            <i class="fa-solid fa-file-code i-format"></i>
+                            <h3>Clean Code</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aperiam id obcaecati maiores cum quibusdam dignissimos cumque excepturi ratione exercitationem ut adipisci sint, saepe suscipit aspernatur vel ad tenetur modi!</p>
+                        </div>
+                        <div class="box d-flex">
+                            <i class="fa-solid fa-compass-drafting i-format"></i>
+                            <h3>Web design</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aperiam id obcaecati maiores cum quibusdam dignissimos cumque excepturi ratione exercitationem ut adipisci sint, saepe suscipit aspernatur vel ad tenetur modi!</p>
+                        </div>
+                        <div class="box d-flex">
+                            <i class="fa-solid fa-laptop-code i-format"></i><h3>Developement</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aperiam id obcaecati maiores cum quibusdam dignissimos cumque excepturi ratione exercitationem ut adipisci sint, saepe suscipit aspernatur vel ad tenetur modi!</p>
+                        </div>
+                        <div class="box d-flex">
+                            <i class="fa-solid fa-bullhorn i-format"></i><h3>Branding</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aperiam id obcaecati maiores cum quibusdam dignissimos cumque excepturi ratione exercitationem ut adipisci sint, saepe suscipit aspernatur vel ad tenetur modi!</p>
+                        </div>
                     </div>
-                    <div class="col debug">
-                        <nav class="menu">
-                          <ul>
-                            <li>Planning</li>
-                            <li>Testimonials</li>
-                            <li>Features</li>
-                            <li>About Us</li>
-                            <a href="#"><span>Get Started</span></a>
-                          </ul>
-                        </nav>
-                        <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+                </div>
+        </section>
+
+        <section class="violet">
+            <div class="planning d-flex container">
+                <img src="./asset/img/planning1.png" alt="">
+                <span>strategic planning</span>
+                <p>Lorem ipsum dolor sit amet consectetur bilo adipisicing elit. Nostrum, quas, perspiciatis itaque  id repellat nemo veniam eos velit sit, omnis nesciunt nulla tenetur odit quae repudiandae tempore delectus culpa dignissimos.</p>
+                <div class="card-planning d-flex">
+                    <img src="./asset/img/planning2.png" alt="">
+                    <span>app developement</span>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, laboriosam quidem! Voluptas consequatur ullam eos sit ea fuga tenetur rem!</p>
+                    <a href="#"><div class="download">
+                        <span><i class="fa-solid fa-arrow-down-long"></i></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials d-flex container">
+            <h4>testimonials</h4>
+            <span>We are committed expert partners</span>
+            <p>We place huge value on strong relationships and have seen the benefit they bring to our business. Customer feedback is vital inhelping us to get it right.</p>
+            <div class="card-testimonials d-flex">
+                <div class="avatar">
+                    <img src="./asset/img/testimonial1.jpg" alt="">
+                </div>
+                <p><i class="fa-solid fa-quote-left"></i>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus debitis, optio labore quo quam modi ducimus! Aliquid aut numquam recusandae corrupti ipsa neque aspernatur excepturi.<i class="fa-solid fa-quote-right"></i></p>
+                <div class="name-testimonials">
+                    <span>nat reynolds</span>
+                </div>
+            </div>
+
+            <div class="card-testimonials d-flex">
+                <div class="avatar">
+                    <img src="./asset/img/testimonial2.jpg" alt="">
+                </div>
+                <p><i class="fa-solid fa-quote-left"></i>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus debitis, optio labore quo quam modi ducimus! Aliquid aut numquam recusandae corrupti ipsa neque aspernatur excepturi.<i class="fa-solid fa-quote-right"></i></p>
+                <div class="name-testimonials">
+                    <span>celia almeda</span>
+                </div>
+            </div>
+
+            <div class="card-testimonials d-flex">
+                <div class="avatar">
+                    <img src="./asset/img/testimonial3.jpg" alt="">
+                </div>
+                <p><i class="fa-solid fa-quote-left"></i>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus debitis, optio labore quo quam modi ducimus! Aliquid aut numquam recusandae corrupti ipsa neque aspernatur excepturi.<i class="fa-solid fa-quote-right"></i></p>
+                <div class="name-testimonials">
+                    <span>bob roberts</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="violet">
+            <div class="benefits container">
+                <h3>Benefits of working with us</h3>
+
+                <div class="benefits-card d-flex">
+                    <div class="text d-flex">
+                        <span>01</span>
+                        <span>high quality</span>
+                        <p>Lorem ipsum catus dolor sit amet consectetur abdul adipisicing elit. Commodi excepturi sapiente vel harum fugit distinctio sint, exercitationem ea? Ratione, sed?</p>
+                    </div>
+                    <div class="benefits-btn">
+                        <a href="#">more</a>
+                    </div>
+                </div>               
+
+                <div class="benefits-card d-flex">
+                    <div class="text d-flex">
+                        <span>02</span>
+                        <span>creative team</span>
+                        <p>Lorem ipsum catus dolor sit amet consectetur abdul adipisicing elit. Commodi excepturi sapiente vel harum fugit distinctio sint, exercitationem ea? Ratione, sed?</p>
+                    </div>
+                    <div class="benefits-btn">
+                        <a href="#">more</a>
+                    </div>
+                </div>
+                    
+                <div class="benefits-card d-flex">
+                    <div class="text d-flex">
+                        <span>03</span>
+                        <span>amazing results</span>
+                        <p>Lorem ipsum catus dolor sit amet consectetur abdul adipisicing elit. Commodi excepturi sapiente vel harum fugit distinctio sint, exercitationem ea? Ratione, sed?</p>
+                    </div>
+                    <div class="benefits-btn">
+                        <a href="#">more</a>
+                    </div>
+                </div>
+
+                <div class="benefits-card d-flex">
+                    <div class="text d-flex">
+                        <span>04</span>
+                        <span>best pricing</span>
+                        <p>Lorem ipsum catus dolor sit amet consectetur abdul adipisicing elit. Commodi excepturi sapiente vel harum fugit distinctio sint, exercitationem ea? Ratione, sed?</p>
+                    </div>
+                    <div class="benefits-btn">
+                        <a href="#">more</a>
+                    </div>
+                </div>
+
+                <div class="benefits-card d-flex">
+                    <div class="text d-flex">
+                        <span>05</span>
+                        <span>innovation</span>
+                        <p>Lorem ipsum catus dolor sit amet consectetur abdul adipisicing elit. Commodi excepturi sapiente vel harum fugit distinctio sint, exercitationem ea? Ratione, sed?</p>
+                    </div>
+                    <div class="benefits-btn">
+                        <a href="#">more</a>
+                    </div>
+                </div>
+
+                <div class="benefits-card d-flex">
+                    <div class="text d-flex">
+                        <span>06</span>
+                        <span>24/7 support</span>
+                        <p>Lorem ipsum catus dolor sit amet consectetur abdul adipisicing elit. Commodi excepturi sapiente vel harum fugit distinctio sint, exercitationem ea? Ratione, sed?</p>
+                    </div>
+                    <div class="benefits-btn">
+                        <a href="#">more</a>
+                    </div>   
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="about d-flex">
+                <div class="about-text">
+                    <h2>about us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium laudantium quaerat quasi dolorem maiores? Perspiciatis quas, veritatis, aut maiores eligendi, commodi dolorum enim blanditiis odio expedita possimus fugit voluptate harum. Unde cumque repellat commodi dicta? Totam minus est dolorum fuga doloribus pariatur consequatur laborum voluptate dolorem. Neque quisquam quam accusamus, atque vitae qui earum voluptates sunt suscipit dignissimos rem nam laborum quis ipsam nisi ipsa hic, quaerat sapiente similique fugiat architecto.<br><br> accusamus neque ad quos sunt minus, impedit culpa aperiam dicta fugit. Laboriosam dolorum nisi necessitatibus vitae nam, corrupti quis debitis at eaque nesciunt! Voluptas temporibus incidunt esse obcaecati aspernatur, similique autem, ea, ipsam officia corrupti laboriosam quidem. Repellat at officia laudantium aperiam voluptatibus non soluta, tempora est quos optio eligendi odit, deleniti vero. Omnis, sapiente. Vel, consectetur corporis hic cum libero sapiente eius vitae vero architecto, molestiae velit, nobis dolore corrupti accusantium ad tempore provident natus animi tenetur?</p>
+                </div>
+                <div class="about-img d-flex">
+                    <div class="image">
+                        <img src="./asset/img/about.jpg" alt="">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                    <span>I help companies tincidunt torto aliquam nulla facilisi cras fermentum odio.</span>
+                    <div class="about-link">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i>Find me on linkedin</a>
                     </div>
                 </div>
             </div>
-        </header>
+        </section>
+    </main>
 
-        <main>
 
-            <section class="intro">
-                <div class="container">
-                    <div class="row debug">
-                        <div class="col debug">
-                            <div class="row">
-                                <div class="col debug">SX</div>
-                                <div class="col debug">DX</div>
-                            </div>
-                        </div>
-                        <div class="col debug">2</div>
-                        <div class="col debug">3</div>
-                        <div class="col debug">4</div>
-                        <div class="col debug">5</div>
-                    </div>
-                </div>
-            </section>
+    <footer></footer>
 
-            <section class="planning">
-                <div class="container">
-                    <div class="row debug">
-                        <div class="col debug">planning</div>
-                        <div class="col debug">2</div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="testimonials">
-                <div class="container">
-                    <div class="top">TEXT TESTIMONIALS</div>
-                    <div class="cards">
-
-                        <div class="card debug">
-                            <div class="row debug">
-                                <div class="col debug">THUMB</div>
-                                <div class="col debug">TEXT</div>
-                            </div>
-                        </div>
-
-                        <div class="card debug">
-                            <div class="row debug">
-                                <div class="col debug">THUMB</div>
-                                <div class="col debug">TEXT</div>
-                            </div>
-                        </div>
-
-                        <div class="card debug">
-                            <div class="row debug">
-                                <div class="col debug">THUMB</div>
-                                <div class="col debug">TEXT</div>
-                            </div>
-                        </div>
-
-                        <div class="card debug">
-                            <div class="row debug">
-                                <div class="col debug">THUMB</div>
-                                <div class="col debug">TEXT</div>
-                            </div>
-                        </div>
-
-                        <div class="card debug">
-                            <div class="row debug">
-                                <div class="col debug">THUMB</div>
-                                <div class="col debug">TEXT</div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </section>
-
-            <section class="benefits">
-                <div class="container">
-                    <div class="top">TEXT BENEFITS</div>
-                    <div class="row debug">
-                        <div class="col debug">1</div>
-                        <div class="col debug">2</div>
-                        <div class="col debug">3</div>
-                        <div class="col debug">4</div>
-                        <div class="col debug">5</div>
-                        <div class="col debug">6</div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="about">
-                <div class="container">
-                    <div class="row debug">
-                        <div class="col debug">ABOUT TEXT</div>
-                        <div class="col debug">IMG</div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="getstarted debug">CTA</section>
-        </main>
-
-        <footer class="debug">FOOTER</footer>
-       
-    </body>
+</body>
 </html>
