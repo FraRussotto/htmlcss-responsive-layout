@@ -464,3 +464,23 @@ a .btn-started p{
   text-decoration: underline;
 }
 
+/* FOOTER */
+
+footer{
+  background-color: #333333;
+  padding: 40px 0;
+}
+
+.foot{
+  color: white;
+  font-size: 1.2rem;
+}
+
+.foot p{
+  margin-bottom: 60px;
+}
+
+.foot a{
+  text-decoration: underline;
+  color: #9792e4;
+}
